@@ -13,7 +13,7 @@ final_hash
 end
 
 def get_english_meaning(path, emoticon)
-  load_library.each do |key, value|
+  load_library(path).each do |key, value|
     if value[:japenese] == emoticon
       return key
     end
