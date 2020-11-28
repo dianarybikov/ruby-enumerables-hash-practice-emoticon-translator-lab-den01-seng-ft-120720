@@ -13,12 +13,5 @@ final_hash
 end
 
 def get_english_meaning(path, emoticon)
-  load_library(path).each do |meaning, value|
-    if value[:japenese] == emoticon
-      return meaning
-    end
-    binding.pry
-  end
-end
-    
+  
   
